@@ -4,7 +4,7 @@
 This is a case study for the Google Data Analyst Certification on Coursera. 
 In this case study, I worked for a fictional company, Cyclistic, along with some key team members. 
 
-### Scenario
+### 1.1 Scenario
 I am a junior data analyst working on the marketing analyst team at Cyclistic, a bike-share
 company in Chicago. 
 The director of marketing believes the company’s future success
@@ -20,7 +20,7 @@ to a fleet of 5,824 bicycles that are geo tracked and locked into a network of 6
 Chicago. The bikes can be unlocked from one station and returned to any other station in the
 system anytime. Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to
 broad consumer segments.
-* ##### Pricing Plans & Memberships
+##### Pricing Plans & Memberships
   There are 3 types of plans: Single-ride passes, Full-day passes, and Annual memberships.
   * Member = Annual memberships
   * Casual = Single-ride passes or/and Full-day passes
@@ -43,15 +43,32 @@ In order to do it, I needed to better understand:
 
 
 ## 3. Process 
+In the analysis process, I used free version of BigQuery and Tableau. Therefore, there are limitations of features that I can use. 
 ### 3.1 Data Collection
 In this case study, 2 kinds of public data are used. The Range of the time is from March 2024 to February 2025.
   * Cyclistic users' trip data from DIVVY
   * Weather data from visualcrossing
+12 CSV files of Trip data and a CSV file of weather data were used. 
 
 ### 3.2 Data Cleaning 
-In order to clean the data, I used Excel to clean data and BigQuery to combine data. In Excel, the data which have errors were fixed as much as possible, such as station names. Due to the CSV feature, I assume when the data converted to CSV, the decimal numbers of latitude and longitude are rounded up somehow which causes the error to define station name. Some stations' rounded up numbers are unique; therefore, I can define the station name. However, most stations are close to each other. It is impossible to define the station name from rounded latitude and longitude. The huge problem is I cannot remove all the data which latitude and longitude are 2 decimal points due to the amount of data with the error. It would be affecting the data analysis. Thus, I removed station name from the data set.
+##### 1. Clean data in Excel
+   * _Error 1: Lots of station locations are uncertain due to the rounnded up latitude and longitude._<br>
+      Some data can be fixed since the combination of rounded numbers of latitude and longitude are unique. However, most of them are uncertain and cannot define the station location.
+      Although it is ideal that I remove the data for analysis, the amount of data that missing information of station's location is too much. Therefore, instead of removing the whole data from dataset, I decided to not using station location data for my analysis.
+      If the data is accurate, I could have analyzed about the trend of location users use the service. IN this case study, I changed approaches to find out the trend. 
+       
+           
+   * _Error 2: Trip length are zero or less than 1 minute._<br>
+     Share-bike service usually charges the certain cost per minute meaning it would be non-profitable record.
+     If location where user started and ended the service is not changed, then user might try to use it but somehow the bike is not used. Or bike geo tracking system would be broken.
+     Either way, these irregular cases should not be included for the analysis. 
+     
+##### 2. Combine 12 months of data into 1 dataset in BigQuery
+   Initial plan was cleaning the data in excel, making 1 dataset using insert and calculate the length of ride time in BigQuery.
+   However, due to the limitation of features in free version of BigQuery, I cannot use the insert seature in BigQuery. 
+   Moreover, there is maximum size that I can handle the data in BigQuery, so I handle minimum data that I need to use for analysis.
 
-##### Cleaned Data Includes  
+###### Cleaned Data looks like:   
 
 
 
@@ -64,11 +81,9 @@ In order to clean the data, I used Excel to clean data and BigQuery to combine d
 ##### Analysis
 
 ### 3.4 Data Visualization
-
 ![Overview](https://github.com/user-attachments/assets/f539e9f0-4a35-4c38-9f0d-83afacc9ab70)
 
-
-### 3.5 Presenting the Data
+### 3.6 Presenting the Data
 
 
 ## 4. Solutions
