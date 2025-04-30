@@ -4,7 +4,7 @@
 This is a case study for the Google Data Analyst Certification on Coursera. 
 In this case study, I worked for a fctional company, Cyclistic, along with some key team members. 
 
-### 1.1 Scenario
+### Scenario
 I am a junior data analyst working on the marketing analyst team at Cyclistic, a bike-share
 company in Chicago. 
 The director of marketing believes the company’s future success
@@ -40,7 +40,8 @@ In order to do it, I needed to better undersrtand:
   * How annual members and casual riders use Cyclistic bikes differently
   * Why casual riders would buy Cyclistic annual memberships
   * How Cyclistic can use digital media to inuence casual riders to become members
-  * 
+
+
 ## 3. Process 
 ### 3.1 Data Collection
 In this case study, 2 kinds of public data are used. The Range of the time is from March 2024 to Feburary 2025.
@@ -82,3 +83,24 @@ Thus, I removed station name from the data set.
 
 
 ## 6. Next Steps 
+
+
+## Data Analysis 
+
+#### Data
+
+#### Methods 
+
+#### Analysis 
+
+
+
+
+## Solutions
+
+
+## Conclusion
+
+
+## Next Steps 
+
