@@ -80,22 +80,4 @@ In order to clean the data, I used Excel to clean data and BigQuery to combine d
 ## 6. Next Steps 
 
 
-## Data Analysis 
-
-#### Data
-
-#### Methods 
-
-#### Analysis 
-
-
-
-
-## Solutions
-
-
-## Conclusion
-
-
-## Next Steps 
 
