@@ -19,7 +19,6 @@ In 2016, Cyclistic launched a successful bike-share offering. Since then, the pr
 Cyclistic wants to increase the profit. Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Although the pricing flexibility helps Cyclistic attract more customers, the director of marketing believes that maximizing the number of annual members will be key to future growth.
 Rather than creating a marketing campaign that targets all-new customers, she believes there is a solid opportunity to convert casual riders into members. She notes that casual riders are already aware of the Cyclistic program and have chosen Cyclistic for their mobility needs.
 
-
 Business Task: **_Design marketing strategies aimed at converting casual riders into
 annual members_**
 
@@ -27,6 +26,7 @@ In order to do it, I needed to better understand:
   * How annual members and casual riders use Cyclistic bikes differently
   * Why casual riders would buy Cyclistic annual memberships
   * How Cyclistic can use digital media to influence casual riders to become members
+
 
 ## 3. Solutions
 In the analysis process, I used free version of BigQuery and Tableau. Therefore, there are limitations of features that I can use. 
@@ -111,12 +111,20 @@ Also, weather conditions are related to the bike-share service, especially casua
 
 
 ### 3.4 Data Visualization
+Click for Tableau dashboard here:  [Cyclistic bike-share Dashboard](https://public.tableau.com/views/Cyclisticbike-share_17440532096660/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+
 ![Overview](https://github.com/user-attachments/assets/f539e9f0-4a35-4c38-9f0d-83afacc9ab70)
 
 ## 4. Conclusion
-Based on my research, I have identified that annual members and casual members use the bikeshare service for different purpose. My analysis shows that anual members tends to use the service regulary and stably with the short ride time each time compared with casual members; the purpose of use Cyclistic bike-share service would be more likely for commuting. This is because their avarage ride time and count didn't change a lot yealy regardless of weather conditions. On the other hand, it seems that casual members tend to use the service for recreation since the usage of the bike-share service and their ride time depend on the weather condition and time. Casual riders would buy Cyclistic annual membership if they can find the advantage of purchasing it even though they would not use it more likely only weekends and warm weather. 
+Based on my research, I have identified that annual members, and casual members use the bike-share service for different purposes. My analysis shows that annual members tend to use the service regularly and stably with short ride time each time compared with casual members; the purpose of using Cyclistic bike-share service would be more likely for commuting. This is because their average ride time and count didn't change a lot yearly regardless of weather conditions. On the other hand, it seems that casual members tend to use the service for recreation since the usage of the bike-share service and their ride time depend on the weather condition and time. 
+Since annual members tend to use the service regularly, it would be good if the marketing team focused on promoting people who commute to facilities near the dock stations such as University students or workers. 
+Also, casual riders would buy Cyclistic annual membership if they can find the advantage of purchasing it even though they would not use it more likely only on weekends and in warm weather. For example, annual members don't need to pay unlock fee when they unlock the bikes from dock and don't need to pay the cost for the first one hour. I will need further research into whether those services will make a profit communicating with Cyclistic’s finance analysts and knowing how much cost company needs to pay to maintain a bike. If these features can make profit, then they can be used as promotion to casual members.
 
 ## 5. Next Steps 
+My recommendations are: 
+* Promoting Cyclistic bike-share service targeting students and their parents, and people working at facilities near the dock stations
+* Further research on the potential profit from the annual members' benefit such as free unlock fee and the first hour
 
 
 
